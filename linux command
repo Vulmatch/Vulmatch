@@ -1,0 +1,13 @@
+for FILE in *; do [ -d "$FILE" ] && echo "$FILE" && (cd "$FILE" &&./buildconf &&./configure --with-openssl --enable-debug CFLAGS="-g -O2" &&make) ;done
+
+
+for FILE in *; do tar -xf $FILE ;done
+
+
+
+for FILE in *; do [ -d "$FILE" ] && echo "$FILE" && (cp '/home/nuc/Downloads/vulnerable_projects/checksrc' "$FILE/lib" && cp '/home/nuc/Downloads/vulnerable_projects/checksrc' "$FILE/src") ;done
+
+cmake -DCMAKE_BUILD_TYPE=DEBUG       -DCMAKE_C_FLAGS_DEBUG="-g -O2"       -DCMAKE_CXX_FLAGS_DEBUG="-g -O2"
+
+
+
