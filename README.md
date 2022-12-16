@@ -5,6 +5,7 @@ Vulmatch is an approach to match 1-day or N-day vulnerabilityes in query binary 
 Vulmatch contains four steps: 1. Data preparation. 2. Locating signature instructions. 3. Construct context-aware binary-level signatures. 4. Signature matching.
 
 ####1. Data preparation
+
 ######1.1 Prepare CVE informations of vulnerable projects. Record each CVE information and store them in the path like "/home/nuc/Downloads/vulnerable_projects/firmware/the_detailed_information_of_vulnerabilities.xlsx". 
 
 ######1.2 Prepare the source code of all the versions of the each project. 
