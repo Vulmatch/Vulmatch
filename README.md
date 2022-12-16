@@ -11,6 +11,7 @@ Vulmatch contains four steps: 1. Data preparation. 2. Locating signature instruc
 ###### 1.2 Prepare the source code of all the versions of the each project. 
 
 Run ```python create_cve_folders.py``` to automatically create a folder for each CVE.
+
 Run ```python find_bin_files_by_version.py``` to automatically extract source code files and binary files to each CVE folder just created.
 
 ###### 1.3 Add tags before each vulnerable function to inform the compiler not to inline the function.
@@ -21,6 +22,7 @@ Run ```python extract_sg/no_inline.py``` to automatically add tags in all source
 #### 2. Locating signature instructions & 3. Construct context-aware binary-level signatures
 
 Run ```python extract_sig/diff.py``` This will output source-code-level signatures in each CVE folder. 
+
 Run ```python extract_sig/extract_insn_from_bin.py``` to output binary-code-level signatures in each CVE folder. Now the binary-code-level signatures in each CVE folder serves as the database.
 
 
